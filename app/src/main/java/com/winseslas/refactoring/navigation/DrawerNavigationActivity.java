@@ -16,7 +16,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.winseslas.refactoring.R;
-import com.winseslas.refactoring.authentication.ui.login.LoginActivity;
+import com.winseslas.refactoring.navigation.ui.login.LoginActivity;
 import com.winseslas.refactoring.databinding.ActivityDrawerNavigationBinding;
 
 public class DrawerNavigationActivity extends AppCompatActivity {
@@ -47,7 +47,7 @@ public class DrawerNavigationActivity extends AppCompatActivity {
         });
 
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow)
+                R.id.nav_home, R.id.nav_favorite, R.id.nav_search, R.id.nav_about, R.id.nav_contact)
                 .setOpenableLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_drawer_navigation);

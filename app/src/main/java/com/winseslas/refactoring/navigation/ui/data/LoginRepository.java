@@ -1,6 +1,6 @@
-package com.winseslas.refactoring.authentication.data;
+package com.winseslas.refactoring.navigation.ui.data;
 
-import com.winseslas.refactoring.authentication.data.model.LoggedInUser;
+import com.winseslas.refactoring.navigation.ui.data.model.LoggedInUser;
 
 /**
  * Class that requests authentication and user information from the remote data source and

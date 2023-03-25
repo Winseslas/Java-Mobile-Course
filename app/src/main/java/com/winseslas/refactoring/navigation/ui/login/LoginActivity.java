@@ -1,4 +1,4 @@
-package com.winseslas.refactoring.authentication.ui.login;
+package com.winseslas.refactoring.navigation.ui.login;
 
 import android.app.Activity;
 
@@ -19,7 +19,7 @@ import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.winseslas.refactoring.R;
-import com.winseslas.refactoring.databinding.*;
+import com.winseslas.refactoring.databinding.ActivityLoginBinding;
 
 public class LoginActivity extends AppCompatActivity {
 

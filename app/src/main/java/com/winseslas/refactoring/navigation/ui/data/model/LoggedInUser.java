@@ -1,4 +1,4 @@
-package com.winseslas.refactoring.authentication.data.model;
+package com.winseslas.refactoring.navigation.ui.data.model;
 
 /**
  * Data class that captures user information for logged in users retrieved from LoginRepository

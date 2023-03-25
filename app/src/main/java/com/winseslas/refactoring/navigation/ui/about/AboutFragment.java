@@ -1,4 +1,4 @@
-package com.winseslas.refactoring.navigation.ui.home;
+package com.winseslas.refactoring.navigation.ui.about;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,22 +10,22 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.winseslas.refactoring.databinding.FragmentHomeBinding;
+import com.winseslas.refactoring.databinding.FragmentAboutBinding;
 
-public class HomeFragment extends Fragment {
+public class AboutFragment extends Fragment {
 
-    private FragmentHomeBinding binding;
+    private FragmentAboutBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        HomeViewModel homeViewModel =
-                new ViewModelProvider(this).get(HomeViewModel.class);
+        AboutViewModel slideshowViewModel =
+                new ViewModelProvider(this).get( AboutViewModel.class);
 
-        binding = FragmentHomeBinding.inflate(inflater, container, false);
+        binding = FragmentAboutBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-//        final TextView textView = binding.textTitleHome;
-//        homeViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        final TextView textView = binding.textAbout;
+        slideshowViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
 

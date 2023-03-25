@@ -1,4 +1,4 @@
-package com.winseslas.refactoring.authentication.ui.login;
+package com.winseslas.refactoring.navigation.ui.login;
 
 /**
  * Class exposing authenticated user details to the UI.

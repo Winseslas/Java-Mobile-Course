@@ -12,13 +12,13 @@
     <string name="paragraph_activity_main">\tWelcome to our digital bookstore, where you can explore and discover a wide selection of digital books for all tastes and ages. Whether you\'re looking for an exciting novel, an educational book, a comic book or a children\'s book, you\'ll find all this and more in our carefully selected collection. With our user-friendly platform, you can easily browse the different categories, discover new authors and add your favorite books to your personal digital library. \tJoin us now and start your reading journey without limits!</string>
     <string name="button_join_us_activity_main">Join us</string>
 
-    <string name="menu_home">Home</string>
+    <string name="menu_home">@string/title_home</string>
     <string name="menu_gallery">@string/menu_favorites</string>
     <string name="menu_slideshow">@string/menu_search</string>
     <string name="title_activity_bottom_navigation">BottomNavigationActivity</string>
     <string name="title_home">Home</string>
-    <string name="title_dashboard">@string/menu_about</string>
-    <string name="title_login">@string/login</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_login">@string/title_activity_login</string>
     <string name="title_notifications">Notifications</string>
 
     <string name="menu_favorites">My favorites</string>
@@ -29,7 +29,7 @@
     <string name="menu_contact">Contact us</string>
 
     <string name="title_activity_login">@string/action_sign_in</string>
-    <string name="Sub_title_activity_login">Welcome back</string>
+    <string name="sub_title_activity_login">Welcome back</string>
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
     <string name="action_sign_in">Sign in or register</string>
@@ -40,4 +40,7 @@
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
+
+    <string name="text_sub_title_home">For you</string>
+    <string name="text_label">Books that may interest you</string>
 </resources>

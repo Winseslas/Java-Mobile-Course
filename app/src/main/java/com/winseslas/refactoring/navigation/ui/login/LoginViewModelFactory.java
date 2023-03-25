@@ -1,11 +1,11 @@
-package com.winseslas.refactoring.authentication.ui.login;
+package com.winseslas.refactoring.navigation.ui.login;
 
 import androidx.lifecycle.ViewModel;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.annotation.NonNull;
 
-import com.winseslas.refactoring.authentication.data.LoginDataSource;
-import com.winseslas.refactoring.authentication.data.LoginRepository;
+import com.winseslas.refactoring.navigation.ui.data.LoginDataSource;
+import com.winseslas.refactoring.navigation.ui.data.LoginRepository;
 
 /**
  * ViewModel provider factory to instantiate LoginViewModel.

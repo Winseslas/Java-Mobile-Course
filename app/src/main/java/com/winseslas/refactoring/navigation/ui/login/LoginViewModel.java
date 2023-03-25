@@ -1,4 +1,4 @@
-package com.winseslas.refactoring.authentication.ui.login;
+package com.winseslas.refactoring.navigation.ui.login;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
@@ -7,9 +7,9 @@ import androidx.lifecycle.ViewModel;
 import android.util.Patterns;
 
 import com.winseslas.refactoring.R;
-import com.winseslas.refactoring.authentication.data.LoginRepository;
-import com.winseslas.refactoring.authentication.data.Result;
-import com.winseslas.refactoring.authentication.data.model.LoggedInUser;
+import com.winseslas.refactoring.navigation.ui.data.LoginRepository;
+import com.winseslas.refactoring.navigation.ui.data.Result;
+import com.winseslas.refactoring.navigation.ui.data.model.LoggedInUser;
 
 public class LoginViewModel extends ViewModel {
 

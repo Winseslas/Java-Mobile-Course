@@ -1,6 +1,6 @@
-package com.winseslas.refactoring.authentication.data;
+package com.winseslas.refactoring.navigation.ui.data;
 
-import com.winseslas.refactoring.authentication.data.model.LoggedInUser;
+import com.winseslas.refactoring.navigation.ui.data.model.LoggedInUser;
 
 import java.io.IOException;
 

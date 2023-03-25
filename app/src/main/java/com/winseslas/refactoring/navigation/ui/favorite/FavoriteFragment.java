@@ -1,4 +1,4 @@
-package com.winseslas.refactoring.navigation.ui.gallery;
+package com.winseslas.refactoring.navigation.ui.favorite;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,21 +10,21 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.winseslas.refactoring.databinding.FragmentGalleryBinding;
+import com.winseslas.refactoring.databinding.FragmentFavoriteBinding;
 
-public class GalleryFragment extends Fragment {
+public class FavoriteFragment extends Fragment {
 
-    private FragmentGalleryBinding binding;
+    private FragmentFavoriteBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        GalleryViewModel galleryViewModel =
-                new ViewModelProvider(this).get(GalleryViewModel.class);
+        FavoriteViewModel galleryViewModel =
+                new ViewModelProvider(this).get(FavoriteViewModel.class);
 
-        binding = FragmentGalleryBinding.inflate(inflater, container, false);
+        binding = FragmentFavoriteBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textGallery;
+        final TextView textView = binding.textFavorite;
         galleryViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }

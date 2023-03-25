@@ -1,4 +1,4 @@
-package com.winseslas.refactoring.authentication.ui.login;
+package com.winseslas.refactoring.navigation.ui.login;
 
 import androidx.annotation.Nullable;
 

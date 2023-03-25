@@ -9,11 +9,11 @@
             android:icon="@drawable/ic_home_black_24dp"
             android:title="@string/menu_home" />
         <item
-            android:id="@+id/nav_gallery"
+            android:id="@+id/nav_favorite"
             android:icon="@drawable/ic_baseline_favorite_24"
             android:title="@string/menu_gallery" />
         <item
-            android:id="@+id/nav_slideshow"
+            android:id="@+id/nav_search"
             android:icon="@drawable/ic_baseline_search_24"
             android:title="@string/menu_slideshow" />
         <item
@@ -21,8 +21,8 @@
             <menu>
                 <group android:checkableBehavior="single">
                     <item
-                        android:id="@+id/nav_dashboard"
-                        android:title="@string/title_dashboard"
+                        android:id="@+id/nav_about"
+                        android:title="@string/menu_about"
                         android:icon="@drawable/ic_baseline_account_circle_24"
                         />
 

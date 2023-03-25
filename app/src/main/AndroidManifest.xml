@@ -13,7 +13,7 @@
         android:theme="@style/Theme.Refactoring"
         tools:targetApi="33">
         <activity
-            android:name=".authentication.ui.login.LoginActivity"
+            android:name=".navigation.ui.login.LoginActivity"
             android:exported="false"
             android:label="@string/title_activity_login" />
         <activity

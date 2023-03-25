@@ -1,4 +1,4 @@
-package com.winseslas.refactoring.authentication.data;
+package com.winseslas.refactoring.navigation.ui.data;
 
 /**
  * A generic class that holds a result success w/ data or an error exception.
