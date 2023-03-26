@@ -43,5 +43,6 @@
 
     <string name="text_sub_title_home">For you</string>
     <string name="text_label">Books that may interest you</string>
+    <string name="prompt_search">Search for a book, an author, a category</string>
     <string name="todo">TODO</string>
 </resources>

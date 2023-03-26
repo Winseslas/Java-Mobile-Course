@@ -13,14 +13,14 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        setTitle("You are welcome");
-
-        Button getStartingButton = findViewById(R.id.getStarting);
-        getStartingButton.setOnClickListener(v -> {
-            Intent registerActivity = new Intent(getApplicationContext(), DrawerNavigationActivity.class);
-            startActivity(registerActivity);
-            finish();
-        });
+        setContentView(R.layout.fragment_search);
+//        setTitle("You are welcome");
+//
+//        Button getStartingButton = findViewById(R.id.getStarting);
+//        getStartingButton.setOnClickListener(v -> {
+//            Intent registerActivity = new Intent(getApplicationContext(), DrawerNavigationActivity.class);
+//            startActivity(registerActivity);
+//            finish();
+//        });
     }
 }
