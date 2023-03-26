@@ -7,7 +7,6 @@ import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.winseslas.refactoring.R;
@@ -23,8 +22,8 @@ public class BooksFragment extends Fragment {
                              Bundle savedInstanceState) {
         binding = FragmentBooksBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
-        RecyclerView horizontalRecyclerView = root.findViewById(R.id.horizontal_recycler_view);
-        horizontalRecyclerView.setAdapter(new BookAdapter());
+        RecyclerView horizontalRecyclerView = root.findViewById( R.id.horizontal_recycler_view);
+        horizontalRecyclerView.setAdapter(new BookAdapter ());
         return root;
     }
 
