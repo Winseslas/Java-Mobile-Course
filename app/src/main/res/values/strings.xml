@@ -43,6 +43,7 @@
 
     <string name="text_sub_title_home">For you</string>
     <string name="text_label">Books that may interest you</string>
+<<<<<<< HEAD
 
     <string-array name="add_book_page_literary_genre">
         <item>Action and Adventure</item>
@@ -97,6 +98,9 @@
     <string name="prompt_author">Author</string>
 
     
+=======
+    <string name="prompt_search">Search for a book, an author, a category</string>
+>>>>>>> bbc3b10f3f389d8bc8a9fcf8405a7e56ecc86b85
     <string name="todo">TODO</string>
     <string name="the_most_recent">The most recent</string>
     <string name="recently_added_books">Recently added books</string>

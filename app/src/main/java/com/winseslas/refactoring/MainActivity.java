@@ -1,10 +1,10 @@
 package com.winseslas.refactoring;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.winseslas.refactoring.navigation.DrawerNavigationActivity;
 
@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
         Button getStartingButton = findViewById(R.id.getStarting);
         getStartingButton.setOnClickListener(v -> {
-            Intent registerActivity = new Intent(getApplicationContext(), DrawerNavigationActivity.class);
+            Intent registerActivity = new Intent (getApplicationContext(), DrawerNavigationActivity.class);
             startActivity(registerActivity);
             finish();
         });
