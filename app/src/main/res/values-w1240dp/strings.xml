@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="todo">TODO</string>
+    <string name="the_most_recent">The most recent</string>
+    <string name="recently_added_books">Recently added books</string>
 </resources>

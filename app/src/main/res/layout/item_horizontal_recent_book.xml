@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="200dp"
     android:layout_height="wrap_content"
     android:layout_marginStart="@dimen/activity_horizontal_margin"
-    android:padding="@dimen/activity_horizontal_margin"
     app:cardElevation="5dp"
     app:cardCornerRadius="@dimen/activity_horizontal_margin">
     <!--    android:onClick="onCardClick"-->
@@ -22,49 +20,28 @@
             android:layout_height="175dp">
 
             <ImageView
-                android:id="@+id/image_view_item"
+                android:id="@+id/image_view_item_recent"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:contentDescription="@string/todo"
                 android:scaleType="centerCrop"
                 android:src="@drawable/book1" />
 
-            <ImageView
-                android:id="@+id/image_start"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:src="@drawable/ic_baseline_star_outline_24"
-                android:layout_marginStart="160dp"
-                android:layout_marginTop="5dp"/>
-
         </androidx.cardview.widget.CardView>
 
         <TextView
-            android:id="@+id/text_book_title"
+            android:id="@+id/text_book_title_recent"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/card_image"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="16dp"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
             android:text="Il était une fois Nelson Mandela"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="20sp"
-            android:textStyle="bold" />
-
-
-        <TextView
-            android:id="@+id/text_book_author"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Nelson Mandela"
-            android:textSize="16sp"
-            android:textAlignment="center"
-            android:textStyle="bold|italic"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="@dimen/activity_horizontal_margin"
-            android:layout_centerHorizontal="true"
-            android:layout_below="@+id/text_book_title"/>
+            android:textStyle="bold|italic" />
 
     </RelativeLayout>
 

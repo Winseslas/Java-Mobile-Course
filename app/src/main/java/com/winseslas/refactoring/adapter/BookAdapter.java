@@ -7,9 +7,16 @@ import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
 import com.winseslas.refactoring.R;
 
 public class BookAdapter extends RecyclerView.Adapter<BookAdapter.ViewHolder> {
+
+    private final int layoutId;
+
+    public BookAdapter(int layoutId) {
+        this.layoutId = layoutId;
+    }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
         public ImageView bookImage;
@@ -23,10 +30,8 @@ public class BookAdapter extends RecyclerView.Adapter<BookAdapter.ViewHolder> {
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater
-                .from(parent.getContext())
-                .inflate(R.layout.item_horizontal_book, parent, false);
-        return new ViewHolder ( view );
+        View view = LayoutInflater.from(parent.getContext()).inflate(layoutId, parent, false);
+        return new ViewHolder(view);
     }
 
     @Override
