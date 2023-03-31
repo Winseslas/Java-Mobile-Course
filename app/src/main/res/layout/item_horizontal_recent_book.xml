@@ -5,6 +5,8 @@
     android:layout_width="200dp"
     android:layout_height="wrap_content"
     android:layout_marginStart="@dimen/activity_horizontal_margin"
+    android:layout_marginTop="@dimen/activity_horizontal_margin"
+    android:layout_marginBottom="@dimen/activity_horizontal_margin"
     app:cardElevation="5dp"
     app:cardCornerRadius="@dimen/activity_horizontal_margin">
     <!--    android:onClick="onCardClick"-->
@@ -17,6 +19,7 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/card_image"
             android:layout_width="match_parent"
+            app:cardCornerRadius="@dimen/activity_horizontal_margin"
             android:layout_height="175dp">
 
             <ImageView
@@ -25,7 +28,7 @@
                 android:layout_height="match_parent"
                 android:contentDescription="@string/todo"
                 android:scaleType="centerCrop"
-                android:src="@drawable/book1" />
+                android:src="@drawable/ic_baseline_attach_email_24" />
 
         </androidx.cardview.widget.CardView>
 

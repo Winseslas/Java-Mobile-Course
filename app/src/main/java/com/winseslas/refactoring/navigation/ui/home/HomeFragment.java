@@ -14,7 +14,7 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.winseslas.refactoring.R;
 import com.winseslas.refactoring.databinding.FragmentHomeBinding;
-import com.winseslas.refactoring.myFragments.books.BooksFragment;
+import com.winseslas.refactoring.myFragments.BooksFragment;
 
 public class HomeFragment extends Fragment {
 
@@ -40,7 +40,7 @@ public class HomeFragment extends Fragment {
     private void initFragment() {
         FragmentManager fragmentManager = getChildFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.frame_layout_container, new BooksFragment ());
+        fragmentTransaction.replace(R.id.frame_layout_container, new BooksFragment());
         fragmentTransaction.addToBackStack(null);
         fragmentTransaction.commit();
     }

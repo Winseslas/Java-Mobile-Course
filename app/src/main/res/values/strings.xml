@@ -43,7 +43,6 @@
 
     <string name="text_sub_title_home">For you</string>
     <string name="text_label">Books that may interest you</string>
-<<<<<<< HEAD
 
     <string-array name="add_book_page_literary_genre">
         <item>Action and Adventure</item>
@@ -94,14 +93,13 @@
 
     </string-array>
     <string name="text_second_section">Literary genre</string>
-
     <string name="prompt_author">Author</string>
 
-    
-=======
     <string name="prompt_search">Search for a book, an author, a category</string>
->>>>>>> bbc3b10f3f389d8bc8a9fcf8405a7e56ecc86b85
     <string name="todo">TODO</string>
     <string name="the_most_recent">The most recent</string>
     <string name="recently_added_books">Recently added books</string>
+    <string name="text_about_description">At Digital Library, we are passionate about reading and learning. Our mission is to provide easy and convenient access to a variety of high-quality digital books to facilitate the discovery of new ideas, stories and perspectives. We believe that reading is an endless source of knowledge and entertainment, and we are committed to providing our customers with an enjoyable and hassle-free reading experience. With Digital Library, you can explore a vast selection of digital books, organize your personal library, and access your favorite titles anywhere, anytime.</string>
+    <string name="our_partners">Our partners</string>
+    <string name="text_about_title">About us</string>
 </resources>

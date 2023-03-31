@@ -23,7 +23,7 @@ public class BookAdapter extends RecyclerView.Adapter<BookAdapter.ViewHolder> {
 
         public ViewHolder(View itemView) {
             super(itemView);
-            bookImage = itemView.findViewById(R.id.image_view_item);
+            bookImage = itemView.findViewById(R.id.image_view_item_books);
         }
     }
 

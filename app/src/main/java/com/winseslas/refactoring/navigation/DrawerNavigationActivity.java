@@ -7,8 +7,6 @@ import android.view.MenuItem;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -18,7 +16,6 @@ import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.snackbar.Snackbar;
 import com.winseslas.refactoring.R;
 import com.winseslas.refactoring.databinding.ActivityDrawerNavigationBinding;
-import com.winseslas.refactoring.myFragments.books.BooksFragment;
 import com.winseslas.refactoring.navigation.ui.login.LoginActivity;
 
 public class DrawerNavigationActivity extends AppCompatActivity {
@@ -35,7 +32,7 @@ public class DrawerNavigationActivity extends AppCompatActivity {
 
         // Initialization of the toolbar
         setSupportActionBar(binding.appBarDrawerNavigation.toolbar);
-        binding.appBarDrawerNavigation.toolbar.setOnClickListener(view -> Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+        binding.appBarDrawerNavigation.toolbar.setOnClickListener(view -> Snackbar.make(view, "The digital library that opens the doors to the imagination.", Snackbar.LENGTH_LONG)
                 .setAction("Action", null).show());
 
         // Initialization of the side menu
