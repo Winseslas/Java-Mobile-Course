@@ -8,13 +8,9 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.winseslas.refactoring.R;
 import com.winseslas.refactoring.databinding.FragmentAboutBinding;
-import com.winseslas.refactoring.myFragments.PartnersFragment;
 
 public class AboutFragment extends Fragment {
 
@@ -31,17 +27,7 @@ public class AboutFragment extends Fragment {
         final TextView textView = binding.textAbout;
         homeViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
 
-        // initialisation du fragment PartnerFragment
-        initFragment();
         return root;
-    }
-
-    private void initFragment() {
-        FragmentManager fragmentManager = getChildFragmentManager();
-        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.frame_layout_partners, new PartnersFragment ());
-        fragmentTransaction.addToBackStack(null);
-        fragmentTransaction.commit();
     }
 
     @Override

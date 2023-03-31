@@ -61,14 +61,147 @@
             app:layout_constraintTop_toBottomOf="@+id/text_about_description"
             tools:targetApi="o" />
 
-        <FrameLayout
+        <HorizontalScrollView
             android:id="@+id/frame_layout_partners"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/activity_horizontal_margin"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/partners" />
+            app:layout_constraintTop_toBottomOf="@id/partners">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/partners" >
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="@dimen/activity_horizontal_margin"
+                    android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                    app:cardElevation="5dp"
+                    app:cardCornerRadius="@dimen/activity_horizontal_margin">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="350dp"
+                        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/partner1"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop"
+                            android:contentDescription="@string/todo" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginTop="60dp"
+                            android:text="@string/partner1"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="@dimen/activity_horizontal_margin"
+                    android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                    app:cardElevation="5dp"
+                    app:cardCornerRadius="@dimen/activity_horizontal_margin">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="350dp"
+                        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/partner2"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitXY"
+                            android:contentDescription="@string/todo" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginStart="5dp"
+                            android:text="@string/partner2"
+                            android:textSize="24sp"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="@dimen/activity_horizontal_margin"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="@dimen/activity_horizontal_margin"
+                    android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                    app:cardElevation="5dp"
+                    app:cardCornerRadius="@dimen/activity_horizontal_margin">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="350dp"
+                        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/partner3"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop"
+                            android:contentDescription="@string/todo" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="80sp"
+                            android:text="@string/partner3"
+                            android:textSize="24sp"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </HorizontalScrollView>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
