@@ -43,55 +43,6 @@
 
     <string name="text_sub_title_home">For you</string>
     <string name="text_label">Books that may interest you</string>
-
-    <string-array name="add_book_page_literary_genre">
-        <item>Action and Adventure</item>
-        <item>Art</item>
-        <item>Alternate History</item>
-        <item>Autobiography</item>
-        <item>Anthology</item>
-        <item>Biography</item>
-        <item>Chick Lit</item>
-        <item>Children\'s</item>
-        <item>Classics</item>
-        <item>Comic Book</item>
-        <item>Coming-of-Age</item>
-        <item>Crime</item>
-        <item>Drama</item>
-        <item>Diary</item>
-        <item>Dictionary</item>
-        <item>Encyclopedia</item>
-        <item>Fairytale</item>
-        <item>Fantasy</item>
-        <item>Guide</item>
-        <item>Health</item>
-        <item>History</item>
-        <item>Horror</item>
-        <item>Humor</item>
-        <item>Journal</item>
-        <item>Math</item>
-        <item>Mystery</item>
-        <item>Memoir</item>
-        <item>Music</item>
-        <item>New Adult</item>
-        <item>Poetry</item>
-        <item>Paranormal</item>
-        <item>Religion</item>
-        <item>Romance</item>
-        <item>Satire</item>
-        <item>Science</item>
-        <item>Science Fiction</item>
-        <item>Self Help</item>
-        <item>Suspense</item>
-        <item>Spirituality</item>
-        <item>Sports</item>
-        <item>Thriller</item>
-        <item>Travel</item>
-        <item>True Crime</item>
-        <item>Westerns</item>
-        <item>Other</item>
-
-    </string-array>
     <string name="text_second_section">Literary genre</string>
     <string name="prompt_author">Author</string>
 

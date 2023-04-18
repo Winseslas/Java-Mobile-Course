@@ -30,7 +30,6 @@ public class HomeFragment extends Fragment {
 
         final TextView textView = binding.textTitleHome;
         homeViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
-
         // initialisation du fragment BooksFragment
         initFragment();
 

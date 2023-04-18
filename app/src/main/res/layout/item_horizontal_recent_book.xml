@@ -2,15 +2,14 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:layout_width="200dp"
+    android:layout_width="250dp"
     android:layout_height="wrap_content"
     android:layout_marginStart="@dimen/activity_horizontal_margin"
     android:layout_marginTop="@dimen/activity_horizontal_margin"
     android:layout_marginBottom="@dimen/activity_horizontal_margin"
     app:cardElevation="5dp"
     app:cardCornerRadius="@dimen/activity_horizontal_margin">
-    <!--    android:onClick="onCardClick"-->
-    <!--    tools:ignore="UsingOnClickInXml"-->
+<!--    android:onClick="onCardClick"-->
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -19,28 +18,26 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/card_image"
             android:layout_width="match_parent"
-            app:cardCornerRadius="@dimen/activity_horizontal_margin"
-            android:layout_height="175dp">
+            android:layout_height="320dp"
+            app:cardCornerRadius="@dimen/activity_horizontal_margin">
 
             <ImageView
-                android:id="@+id/image_view_item_recent"
+                android:id="@+id/image_view_item_books"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:contentDescription="@string/todo"
-                android:scaleType="centerCrop"
-                android:src="@drawable/ic_baseline_attach_email_24" />
+                android:scaleType="centerCrop" />
 
         </androidx.cardview.widget.CardView>
 
         <TextView
-            android:id="@+id/text_book_title_recent"
+            android:id="@+id/text_book_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/card_image"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="@dimen/activity_horizontal_margin"
-            android:text="Il était une fois Nelson Mandela"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="20sp"

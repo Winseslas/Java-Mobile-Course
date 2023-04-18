@@ -3,6 +3,7 @@ package com.winseslas.refactoring.models;
 /**
  * This class represents a book, with its name, description, image URL,
  * number of likes, and whether it is liked or not.
+ * @author Fortune
  */
 public class Book {
 
