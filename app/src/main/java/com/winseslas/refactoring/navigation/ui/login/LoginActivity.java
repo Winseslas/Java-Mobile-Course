@@ -1,14 +1,8 @@
 package com.winseslas.refactoring.navigation.ui.login;
 
 import android.app.Activity;
-
-import androidx.lifecycle.ViewModelProvider;
-
+import android.content.Intent;
 import android.os.Bundle;
-
-import androidx.annotation.StringRes;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
@@ -18,8 +12,14 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+import androidx.annotation.StringRes;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.lifecycle.ViewModelProvider;
+
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.winseslas.refactoring.R;
 import com.winseslas.refactoring.databinding.ActivityLoginBinding;
+import com.winseslas.refactoring.navigation.DrawerNavigationActivity;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -29,11 +29,19 @@ public class LoginActivity extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        ActivityLoginBinding binding = ActivityLoginBinding.inflate(getLayoutInflater());
-        setContentView(binding.getRoot());
+        com.winseslas.refactoring.databinding.ActivityLoginBinding binding = ActivityLoginBinding.inflate ( getLayoutInflater ( ) );
+        setContentView( binding.getRoot());
 
         loginViewModel = new ViewModelProvider(this, new LoginViewModelFactory())
                 .get(LoginViewModel.class);
+
+        FloatingActionButton backBtn = findViewById(R.id.back_home);
+        backBtn.setOnClickListener(view -> {
+            Intent welcomeActivity = new Intent(getApplicationContext(), DrawerNavigationActivity.class);
+            startActivity(welcomeActivity);
+            finish();
+        });
+
 
         final EditText usernameEditText = binding.username;
         final EditText passwordEditText = binding.password;
@@ -63,11 +71,9 @@ public class LoginActivity extends AppCompatActivity {
             }
             if (loginResult.getSuccess() != null) {
                 updateUiWithUser(loginResult.getSuccess());
+                setResult(Activity.RESULT_OK);
+                finish();
             }
-            setResult(Activity.RESULT_OK);
-
-            //Complete and destroy login activity once successful
-            finish();
         });
 
         TextWatcher afterTextChangedListener = new TextWatcher() {
@@ -99,11 +105,10 @@ public class LoginActivity extends AppCompatActivity {
 
         loginButton.setOnClickListener(v -> {
             loadingProgressBar.setVisibility(View.VISIBLE);
-            loginViewModel.login(usernameEditText.getText().toString(),
-                    passwordEditText.getText().toString());
+//            loginViewModel.login(usernameEditText.getText().toString(),
+//                    passwordEditText.getText().toString());
         });
     }
-
     private void updateUiWithUser(LoggedInUserView model) {
         String welcome = getString(R.string.welcome) + model.getDisplayName();
         // TODO : initiate successful logged in experience

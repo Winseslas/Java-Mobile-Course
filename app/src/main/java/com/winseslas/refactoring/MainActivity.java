@@ -44,8 +44,8 @@ public class MainActivity extends AppCompatActivity {
                 // If the device is connected to the Internet, set the button to start the DrawerNavigationActivity.
                 Button getStartingButton = findViewById(R.id.getStarting);
                 getStartingButton.setOnClickListener(v -> {
-                    Intent registerActivity = new Intent(getApplicationContext(), DrawerNavigationActivity.class);
-                    startActivity(registerActivity);
+                    Intent welcomeActivity = new Intent(getApplicationContext(), DrawerNavigationActivity.class);
+                    startActivity(welcomeActivity);
                     finish();
                 });
             }

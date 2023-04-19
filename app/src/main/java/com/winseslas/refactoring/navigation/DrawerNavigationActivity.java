@@ -49,6 +49,8 @@ public class DrawerNavigationActivity extends AppCompatActivity {
             return true;
         });
 
+
+
         // Navigation configuration
         mAppBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.nav_home, R.id.nav_favorite, R.id.nav_search, R.id.nav_about, R.id.nav_contact)
