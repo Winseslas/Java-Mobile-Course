@@ -14,6 +14,13 @@ public class Book {
     private boolean isLiked = false; // Whether the book is liked or not
 
     /**
+     *
+     * Default constructor required for calls to DataSnapshot.getValue(Book.class)
+     */
+    public Book() {}
+
+
+    /**
      * Constructs a new Book object.
      *
      * @param name          The name of the book.

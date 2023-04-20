@@ -81,13 +81,22 @@ public class BookAdapter extends RecyclerView.Adapter<BookAdapter.BookViewHolder
             bookTitle.setText(currentBook.getName());
 
             if(this.element){
-                bookNumberOfLikes.setText(String.valueOf(currentBook.getNumberOfLikes()));
+                bookNumberOfLikes.setText( String.format ( "%s k" , String.valueOf ( currentBook.getNumberOfLikes ( ) ) ) );
                 // Set the liked icon according to the book's liked status
                 if (currentBook.isLiked()) {
                     bookIsLiked.setImageResource(R.drawable.ic_baseline_star_rate_24);
                 } else {
                     bookIsLiked.setImageResource(R.drawable.ic_baseline_star_outline_24);
                 }
+                bookIsLiked.setOnClickListener(new View.OnClickListener() {
+
+                    @Override
+                    public void onClick(View view) {
+                        currentBook.setLiked ( !currentBook.isLiked () );
+                    }
+                });
+
+
             }
         }
     }

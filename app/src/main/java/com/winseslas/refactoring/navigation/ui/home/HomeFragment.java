@@ -14,7 +14,11 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.winseslas.refactoring.R;
 import com.winseslas.refactoring.databinding.FragmentHomeBinding;
+import com.winseslas.refactoring.models.Book;
 import com.winseslas.refactoring.myFragments.BooksFragment;
+import com.winseslas.refactoring.repository.BookRepository;
+
+import java.util.ArrayList;
 
 public class HomeFragment extends Fragment {
 
@@ -30,8 +34,10 @@ public class HomeFragment extends Fragment {
 
         final TextView textView = binding.textTitleHome;
         homeViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+
         // initialisation du fragment BooksFragment
         initFragment();
+
 
         return root;
     }

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "176231117345",
+    "firebase_url": "https://digitallibrary-cf35c-default-rtdb.firebaseio.com",
+    "project_id": "digitallibrary-cf35c",
+    "storage_bucket": "digitallibrary-cf35c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:176231117345:android:a55adc7b378d94c329e960",
+        "android_client_info": {
+          "package_name": "com.winseslas.refactoring"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "176231117345-kd3prf68al7o0dk76hmdeglmdbfn11hv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADbexrJF_JWNYjzoQQeypVKwrw3BU5rF4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "176231117345-kd3prf68al7o0dk76hmdeglmdbfn11hv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
