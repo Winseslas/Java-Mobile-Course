@@ -17,12 +17,12 @@ public class BookRepository {
     private static BookRepository instance;
 
     private FirebaseDatabase database;
-    private DatabaseReference books;
+    private DatabaseReference databaseReference;
     private ArrayList<Book> booksList;
 
     private BookRepository() {
         database = FirebaseDatabase.getInstance();
-        books = database.getReference("books");
+        databaseReference = database.getReference("books");
         booksList = new ArrayList<>();
     }
 
@@ -35,7 +35,7 @@ public class BookRepository {
 
     public void findAll(final BookRepositoryCallback callback) {
         // Read from the database
-        books.addValueEventListener(new ValueEventListener () {
+        databaseReference.addValueEventListener(new ValueEventListener () {
             /**
              * This method will be called with a snapshot of the data at this location. It will also be called
              * each time that data changes.
@@ -91,6 +91,10 @@ public class BookRepository {
     }
 
     public void updateByIsLiked(Book book){
+
+    }
+
+    public void findByIsLiked(final BookRepositoryCallback callback) {
 
     }
 

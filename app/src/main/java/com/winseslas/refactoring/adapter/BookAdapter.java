@@ -19,9 +19,9 @@ public class BookAdapter extends RecyclerView.Adapter<BookAdapter.BookViewHolder
 
     private final List<Book> booksList;
     private final int layoutId;
-    private final boolean element;
+    private final int element;
 
-    public BookAdapter(int layout, List<Book> booksList, boolean element ) {
+    public BookAdapter(int layout, List<Book> booksList, int element ) {
         this.booksList = booksList;
         this.layoutId = layout;
         this.element = element;
@@ -56,31 +56,36 @@ public class BookAdapter extends RecyclerView.Adapter<BookAdapter.BookViewHolder
         private final TextView bookTitle;
         private ImageView bookIsLiked;
         private TextView bookNumberOfLikes;
-        private final boolean element;
+        private final int element;
 
-        public BookViewHolder(View itemView, boolean element) {
+        public BookViewHolder(View itemView, int element) {
             super(itemView);
             this.element = element;
 
             bookImage = itemView.findViewById(R.id.image_view_item_books);
             bookTitle = itemView.findViewById(R.id.text_book_title);
 
-            if(this.element){
+           if(this.element == 1){
                 bookIsLiked = itemView.findViewById(R.id.image_start);
                 bookNumberOfLikes = itemView.findViewById(R.id.text_liked);
             }
         }
 
         public void bind(Book currentBook) {
+//            BookRepository bookRepository = BookRepository.getInstance ();
             // Load the book image using Glide
             if (currentBook.getImageUrl() != null){
                 Glide.with(itemView.getContext())
                         .load(currentBook.getImageUrl())
                         .into(bookImage);
+            } else {
+                Glide.with(itemView.getContext())
+                        .load("book.jpg")
+                        .into(bookImage);
             }
             bookTitle.setText(currentBook.getName());
 
-            if(this.element){
+           if(this.element == 1){
                 bookNumberOfLikes.setText( String.format ( "%s k" , String.valueOf ( currentBook.getNumberOfLikes ( ) ) ) );
                 // Set the liked icon according to the book's liked status
                 if (currentBook.isLiked()) {
@@ -93,11 +98,16 @@ public class BookAdapter extends RecyclerView.Adapter<BookAdapter.BookViewHolder
                     @Override
                     public void onClick(View view) {
                         currentBook.setLiked ( !currentBook.isLiked () );
+//                        bookRepository.updateByIsLiked ( currentBook );
                     }
                 });
+           } else if (this.element == 2) {
+//               for (Book b:) {
+                   System.out.println("Livre : " + currentBook.getName ());
 
-
-            }
+//               }
+               bookNumberOfLikes.setText( String.format ( "%s k" , String.valueOf ( currentBook.getNumberOfLikes ( ) ) ) );
+           }
         }
     }
 }

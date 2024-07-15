@@ -36,7 +36,7 @@ public class LiteraryGenreAdapter extends RecyclerView.Adapter<LiteraryGenreAdap
     @Override
     public LiteraryGenreAdapterViewHolder onCreateViewHolder(@NonNull ViewGroup parent , int viewType) {
         View view = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.item_vertical_literary_genre, parent, false);
+                .inflate(R.layout.item_horizontal_literary_genre , parent, false);
 
         return new LiteraryGenreAdapterViewHolder(view);
     }

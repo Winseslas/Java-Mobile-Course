@@ -7,6 +7,7 @@ package com.winseslas.refactoring.models;
  */
 public class Book {
 
+    private int id;                  // The id of the book
     private String name;             // The name of the book
     private String description;      // The description of the book
     private String imageUrl;         // The URL of the image of the book
@@ -22,20 +23,37 @@ public class Book {
 
     /**
      * Constructs a new Book object.
-     *
+     * @param id            The id of the
      * @param name          The name of the book.
      * @param description   A brief description of the book.
      * @param imageUrl      The URL of the book cover image.
      * @param numberOfLikes The number of likes of the book.
      * @param isLiked       Whether the book is liked
      */
-    public Book(String name, String description, String imageUrl, int numberOfLikes,  boolean isLiked) {
+    public Book(int id, String name, String description, String imageUrl, int numberOfLikes,  boolean isLiked) {
+        this.id = id;
         this.name = name;
         this.description = description;
         this.imageUrl = imageUrl;
         this.numberOfLikes = numberOfLikes;
         this.isLiked = isLiked;
 
+    }
+
+    /**
+     *
+     * @return the id of book
+     */
+    public int getId() {
+        return id;
+    }
+
+    /**
+     * Sets the id of the book
+     * @param id
+     */
+    public void setId(int id) {
+        this.id = id;
     }
 
     /**

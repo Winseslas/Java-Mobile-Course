@@ -29,7 +29,7 @@ public class BooksFragment extends Fragment {
     private Context context;
 
     @Override
-    public void onAttach(Context context) {
+    public void onAttach(@NonNull Context context) {
         super.onAttach(context);
         this.context = context;
     }
@@ -49,7 +49,7 @@ public class BooksFragment extends Fragment {
                 // books recycler view
                 RecyclerView horizontalRecyclerView = root.findViewById( R.id.horizontal_recycler_view);
                 if (horizontalRecyclerView != null) {
-                    horizontalRecyclerView.setAdapter(new BookAdapter (R.layout.item_horizontal_book, books , true));
+                    horizontalRecyclerView.setAdapter(new BookAdapter (R.layout.item_horizontal_book, books , 1));
                 }
 
                 // Recent books
@@ -59,7 +59,7 @@ public class BooksFragment extends Fragment {
 
                 RecyclerView genreRecyclerView = root.findViewById(R.id.horizontal_last_recycler_view);
                 if (genreRecyclerView != null) {
-                    genreRecyclerView.setAdapter(new BookAdapter (R.layout.item_horizontal_recent_book, lastThreeBooks, false ));
+                    genreRecyclerView.setAdapter(new BookAdapter (R.layout.item_horizontal_recent_book, lastThreeBooks, 0 ));
                 }
             }
 

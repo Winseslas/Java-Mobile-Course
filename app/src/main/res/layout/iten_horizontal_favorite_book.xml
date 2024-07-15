@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
-    android:layout_width="250dp"
+    android:layout_width="200dp"
     android:layout_height="wrap_content"
     android:layout_marginStart="@dimen/activity_horizontal_margin"
     android:layout_marginTop="@dimen/activity_horizontal_margin"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_horizontal_margin"
     android:layout_marginBottom="@dimen/activity_horizontal_margin"
     app:cardElevation="5dp"
     app:cardCornerRadius="@dimen/activity_horizontal_margin">
@@ -17,7 +20,7 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/card_image"
             android:layout_width="match_parent"
-            android:layout_height="320dp"
+            android:layout_height="310dp"
             app:cardCornerRadius="@dimen/activity_horizontal_margin">
 
             <ImageView
@@ -32,15 +35,42 @@
         <TextView
             android:id="@+id/text_book_title"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="80dp"
             android:layout_below="@+id/card_image"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/text_book_author"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_book_title"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:textAlignment="center"
+            android:textSize="16sp"
             android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/text_liked"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/text_book_title"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="155dp"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textColor="@color/yellow"
+            android:textStyle="italic" />
+
 
     </RelativeLayout>
 
